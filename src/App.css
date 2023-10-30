@@ -1,0 +1,26 @@
+*{
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.alert-secondary{
+  border: 5px solid whitesmoke;
+  padding: 20px;
+}
+.btn-secondary{
+  margin: 10px;
+  align-items: center;
+}
+#doneButton{
+  margin: 10px;
+  margin-bottom: 20px;
+}
+#csandcrepe{
+  margin-top: 20px;
+}
+#menu{
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 60px;
+}
