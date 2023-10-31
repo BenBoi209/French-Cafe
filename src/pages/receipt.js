@@ -8,21 +8,24 @@ const Recipt = ({}) => {
 
   return (
     <>
-      <h1>{totalItems}</h1>
+      <u>
+        <h1>Order</h1>
+      </u>
       {items.map((item) => (
         <>
-          <h1>{item.img}</h1>
+          <label>Item: {item.title}; </label>
+          <br />
+          <label>Quantity: {item.quantity}; </label>
+          <br />
+          <label>Price: ₹{item.price}</label>
+          <br />
         </>
       ))}
       {items.map((item) => (
-        <>
-          <h1>{item.title}</h1>
-        </>
+        <></>
       ))}
       {items.map((item) => (
-        <>
-          <h1>{item.price}</h1>
-        </>
+        <></>
       ))}
     </>
   );
