@@ -21,12 +21,6 @@ const Recipt = ({}) => {
           <br />
         </>
       ))}
-      {items.map((item) => (
-        <></>
-      ))}
-      {items.map((item) => (
-        <></>
-      ))}
     </>
   );
 };
