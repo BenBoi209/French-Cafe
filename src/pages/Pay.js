@@ -1,6 +1,12 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Pay = () => {
+  useEffect(() => {
+    localStorage.setItem("tokenNumber",1);
+  },[])
+  const [token] = useState(localStorage.getItem("tokenNumber"))
+
   return (
     <div className="pay">
       <div className="container">
@@ -21,13 +27,15 @@ const Pay = () => {
           </span>
           <input
             type="text"
+            value={token}
             className="form-control"
             aria-label="Sizing example input"
             aria-describedby="inputGroup-sizing-default"
+            disabled
           />
         </div>
         <Link to="/done">
-          <button type="button" class="btn btn-primary" id="doneButton">
+          <button type="button" className="btn btn-primary" id="doneButton" onClick={() => localStorage.setItem("tokenNumber",(token*1)+1)}>
             Done
           </button>
         </Link>
