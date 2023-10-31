@@ -8,6 +8,7 @@ import Done from "./pages/Done";
 import Menu from "./Cart/Menu";
 import Cart from "./Cart/Cart";
 import { CartProvider } from "react-use-cart";
+import Recipt from "./pages/receipt";
 
 const App = () => {
   const toge = () => {
@@ -32,6 +33,7 @@ const App = () => {
           <Route path="/menu" exact Component={toge} />
           <Route path="/pay" exact Component={Pay} />
           <Route path="/done" exact Component={Done} />
+          <Route path="/receipt" exact Component={Recipt} />
         </Routes>
       </Router>
     </div>
