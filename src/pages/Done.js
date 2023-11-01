@@ -1,7 +1,7 @@
 const Done = () => {
   setTimeout(() => {
     window.open("/receipt", "__blank");
-  }, 4000);
+  }, 2000);
 
   return (
     <div className="done">
