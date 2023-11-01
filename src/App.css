@@ -22,12 +22,12 @@
 .navbar {
   margin: 0;
   padding: 0;
-  background: transparent;
+  background: black;
   overflow: hidden;
 }
 .navbar a {
   float: left;
-  color: black;
+  color: whitesmoke;
   text-align: center;
   padding: 4px;
   text-decoration: none;
