@@ -8,17 +8,17 @@ const Navbar = () => {
         <div className="row">
           <div className="col">
             <Link to="/home">
-              <nav className="navbar bg-body-tertiary">
-                <div className="container-fluid">
-                  <a className="navbar-brand" href="#">
+              <nav className="bar">
+                <div className="container">
+                  <a href="#">
                     <img
                       src={Logo}
                       alt="Logo"
-                      width={"30"}
-                      height={"30"}
+                      width={"20"}
+                      height={"25"}
                       className="d-inline-block align-text-top"
                     />
-                    Cafeteria
+                    Caféteria
                   </a>
                 </div>
               </nav>

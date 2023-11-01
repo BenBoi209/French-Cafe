@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useCart } from "react-use-cart";
 
 const Recipt = ({}) => {
-  const { items, totalItems } = JSON.parse(
+  const { items, cartTotal } = JSON.parse(
     localStorage.getItem("react-use-cart")
   );
 
@@ -19,8 +19,11 @@ const Recipt = ({}) => {
           <br />
           <label>Price: ₹{item.price}</label>
           <br />
+          <label> </label> <br />
         </>
       ))}
+      <label> </label> <br />
+      <label>Total Price: {cartTotal}</label>
     </>
   );
 };

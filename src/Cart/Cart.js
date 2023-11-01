@@ -14,8 +14,6 @@ const Cart = () => {
     emptyCart,
   } = useCart();
 
-  
-
   if (isEmpty) return <h1 className="text-center">Cart is Empty</h1>;
   return (
     <section className="py-4 container">
