@@ -1,10 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
-import { useCart } from "react-use-cart";
 
 const Home = () => {
-  const { emptyCart } = JSON.parse(localStorage.getItem("react-use-cart"));
   return (
     <div className="home" id="homePage">
       <Link to="/home">
@@ -12,11 +9,7 @@ const Home = () => {
           <h1>Welcome To Our Cafeteria!</h1>
         </div>
         <Link to="/menu">
-          <button
-            type="button"
-            className="btn btn-secondary"
-            onClick={() => emptyCart()}
-          >
+          <button type="button" className="btn btn-secondary">
             Order Now
           </button>
         </Link>
