@@ -32,7 +32,7 @@ const data = {
       img: ChocolateSouffle,
       title: "Chocolate Souffle",
       desc: "",
-      price: 45,
+      price: 60,
     },
   ],
 };
